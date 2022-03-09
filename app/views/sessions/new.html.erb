@@ -1,0 +1,10 @@
+
+ <%= form_with(scope: :session, url: sessions_path, local: true, class: "login-form") do |form| %>
+  <h1>Log in</h1>
+        <%= form.label :email, class: "sr-only" %>
+        <%= form.email_field :email, class: "form-control", placeholder: 'your email', required: true, autofocus: true %>
+        <%= form.label :password, class: "sr-only" %>
+        <%= form.password_field :password, class: "form-control", placeholder: 'your password', required: true %><br>
+        <%= form.submit "ログイン", class: "btn-primary", id: "active-btn" %>
+      
+<% end %>
