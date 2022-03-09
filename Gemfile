@@ -12,12 +12,17 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bcrypt'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem "rexml"
+gem "faker"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem "pry-byebug"
   gem "better_errors"
   gem "binding_of_caller"
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "launchy"
 end
 
 group :development do
@@ -32,6 +37,7 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem "database_cleaner"
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
