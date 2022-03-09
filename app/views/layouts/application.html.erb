@@ -20,7 +20,7 @@
             <ul class="navbar-nav">
               <% if current_user %>
                 <li class="nav-item">
-                  <%= link_to current_user.name, user_path(current_user), class: "nav-lik #{css_active('users', 'show')}", aria-current="page" %>
+                  <%= link_to current_user.name, user_path(current_user), class: "nav-lik #{css_active('users', 'show')}", "aria-current": "page" %>
                 </li>
                 <li class="nav-item">
                   <%= link_to "new post", new_blog_path, class: "nav-lik #{css_active('blogs', 'new')}" %>
